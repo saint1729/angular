@@ -1,0 +1,30 @@
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 200px;  
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex: 1 2 1;
+    background: tomato;
+}
+
+.flex-item {
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.main {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}

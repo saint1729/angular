@@ -1,2 +1,2 @@
-# angular
-My Angular Practice
+# frontend
+My Frontend Practice
