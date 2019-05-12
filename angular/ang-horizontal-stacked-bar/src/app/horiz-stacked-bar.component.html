@@ -1,0 +1,23 @@
+<div flex-gt-sm="50">
+  <div class="pad">
+    <div [style.height.px]="100">
+      <ngx-charts-bar-horizontal-stacked
+        [view]="view"
+        [results]="multi"
+        [legend]="true"
+        [legendPosition]="below"
+        (select)="onSelect($event)"
+        [ngClass]="{'svgs': true}">
+      </ngx-charts-bar-horizontal-stacked>
+
+      <ngx-charts-chart
+        [view]="[1000, 100]"
+        [showLegend]="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" viewBox="0 0 8 8">
+          <rect fill="#ff7156" width="8" height="8"/>
+          <path fill="#c82c0e" d="M0, 0H8v1H0zm0, 2H8v1H0zm0, 2H8v1H0zm0, 2H8v1H0M1, 0V8h1V0zm2, 0V8h1V0zm2, 0V8h1V0zm2, 0V8h1V0"/>
+        </svg>
+      </ngx-charts-chart>
+    </div>
+  </div>
+</div>
