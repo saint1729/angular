@@ -18,11 +18,11 @@ export class HorizStackedBarComponent {
     Object.assign(this, { multi });
   }
 
-  view: number[] = [1800, 100];
+  view: number[] = [1800, 50];
 
   showLegend = true;
 
-  onSelect(event) {
+  onSelect(event: any) {
     console.log(event);
   }
 

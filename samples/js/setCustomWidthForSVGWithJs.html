@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg style="border: 1px solid red;" width="100px" height="14px">
+    <defs>
+        <pattern id="saint1729" viewBox="0 0 8 8">
+  	        <path d="M0 0 H4 V4 H0 Z" fill="#574849"/>
+  	        <path d="M4 0 H8 V4 H4 Z" fill="#937632"/>
+  	        <path d="M0 4 H4 V8 H0 Z" fill="#937632"/>
+  	        <path d="M4 4 H8 V8 H4 Z" fill="#574849"/>
+        </pattern>
+    </defs>
+  
+    <rect fill="url(#saint1729)" />
+    Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+
+<script language="javascript" type="text/javascript">
+    function setWidth() {
+        var width = 671;
+        var e0 = document.getElementsByTagName("svg")[0];
+        e0.setAttribute("width", width + "px");
+        var e1 = e0.getElementById("saint1729");
+        var e1Width = 0.6*1200/width;
+        e1.setAttribute("width", e1Width + "%");
+        e1.setAttribute("height", e1Width + "%");
+        var e2 = e0.getElementsByTagName("rect")[0];
+        e2.setAttribute("width", width);
+        e2.setAttribute("height", width);
+    }
+    window.onload = setWidth();
+</script>
+
+</html>
+
