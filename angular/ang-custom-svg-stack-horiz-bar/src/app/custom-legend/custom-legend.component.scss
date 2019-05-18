@@ -1,0 +1,27 @@
+.legend {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.svg-patterns {
+  display: flex;
+}
+
+.legend-units {
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend-unit {
+  display: flex;
+  min-width: 150px;
+  padding-left: 16px;
+  
+  .legend-unit-svg {
+    padding: 4px;
+  }
+
+  .legend-unit-title {
+    padding: 4px;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="legend">
+  <div class="svg-patterns">
+    <app-tiny-checkered-svg></app-tiny-checkered-svg>
+  </div>
+  <div class="legend-units">
+    <div class="legend-unit" *ngFor="let val of multi[0]?.series; let i=index">
+      <div class="legend-unit-svg">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" [attr.fill]="colorScheme.domain[i]"></circle>
+        </svg>
+      </div>
+      <div class="legend-unit-title">
+        {{val.name}} {{colorScheme.length}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -6,11 +6,13 @@ import { DocumentReference } from './document-reference';
 import { StackedHorizontalBarComponent } from './stacked-horizontal-bar/stacked-horizontal-bar.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomLegendComponent } from './custom-legend/custom-legend.component';
 
 @NgModule({
   declarations: [
     TinyCheckeredSVGComponent,
-    StackedHorizontalBarComponent
+    StackedHorizontalBarComponent,
+    CustomLegendComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [DocumentReference],
-  bootstrap: [TinyCheckeredSVGComponent]
+  bootstrap: [StackedHorizontalBarComponent]
 })
 export class AppModule { }

@@ -1,14 +1,31 @@
-<ngx-charts-bar-horizontal-stacked
-      [view]="view"
-      [scheme]="colorScheme"
-      [results]="multi"
-      [gradient]="gradient"
-      [xAxis]="showXAxis"
-      [yAxis]="showYAxis"
-      [legend]="showLegend"
-      [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel"
-      [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="yAxisLabel"
-      (select)="onSelect($event)">
+<div class="custom-st-hrz-bar">
+  <div>
+    <h3>saint1729</h3>
+  </div>
+
+  <div class="bars">
+    <app-tiny-checkered-svg></app-tiny-checkered-svg>
+    <ngx-charts-bar-horizontal-stacked
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="multi"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          (select)="onSelect($event)">
+      <ng-template #tooltipTemplate let-model="model">
+        <div class="tooltip-text">
+          {{model.tooltipText}}
+        </div>
+      </ng-template>
     </ngx-charts-bar-horizontal-stacked>
+  </div>
+
+  <div>
+    <app-custom-legend [colorScheme]="colorScheme"></app-custom-legend>
+  </div>
+</div>

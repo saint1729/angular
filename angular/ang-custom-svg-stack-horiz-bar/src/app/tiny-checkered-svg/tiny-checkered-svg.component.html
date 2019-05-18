@@ -1,13 +1,7 @@
-<svg style="border: 1px solid red;" height="14px">
-    <defs>
-        <pattern id="saint1729" viewBox="0 0 8 8">
-  	        <path d="M0 0 H4 V4 H0 Z" fill="#574849"/>
-  	        <path d="M4 0 H8 V4 H4 Z" fill="#937632"/>
-  	        <path d="M0 4 H4 V8 H0 Z" fill="#937632"/>
-  	        <path d="M4 4 H8 V8 H4 Z" fill="#574849"/>
-        </pattern>
-    </defs>
-  
-    <rect fill="url(#saint1729)" />
-    Sorry, your browser does not support inline SVG.
+<svg [attr.width]="width" [attr.height]="height">
+  <defs>
+    <pattern id="saint1729" patternUnits="userSpaceOnUse" width="8" height="8">
+      <image [attr.xlink:href]="imageURL" x="0" y="0" width="8" height="8" />
+    </pattern>
+  </defs>
 </svg>

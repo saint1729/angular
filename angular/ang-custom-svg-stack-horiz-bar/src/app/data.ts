@@ -15,15 +15,17 @@ export let single = [
 
 export let multi = [
   {
-    name: 'Germany',
+    name: 'Data Assets',
     series: [
       {
-        name: '2010',
-        value: 7300000
+        name: 'Non-senstitive, Processed',
+        value: 7300000,
+        tooltipText: 'Custom Tooltip for Non-sensitive, Processed by saint1729'
       },
       {
-        name: '2011',
-        value: 8940000
+        name: 'Sensitive, Processed',
+        value: 8940000,
+        tooltipText: 'Custom Tooltip for Senstive, Processed by saint1729'
       }
     ]
   }
